@@ -75,24 +75,20 @@ of R packages).
     it may be worth trying to set up a [Docker](https://www.docker.com/)
     image with the fonts and LaTeX packages installed.)
 
-9.  The citation style (`apa-single-spaced.csl`) came from the the
-    [Zotero Style
-    Repository](https://www.zotero.org/styles?q=id%3Aapa-single-spaced&fields=psychology&format=author-date).
-
-10. Copy README.Rmd (this document) from a prior GitHub linked project
+9.  Copy `README.Rmd` (this document) from a prior GitHub linked project
     and edit it to explain what this project is about and how it was set
     up. Keep this up to date as the project progresses. See [GitHub
     document](https://rmarkdown.rstudio.com/github_document_format.html)
     for instructions on the contents for this kind of README to be
     rendered on GitHub.
 
-11. Set the license.  
+10. Set the license.  
     `usethis::use_ccby_license()`  
     Add the appropriate license badge from
     [lukas-h/license-badges.md](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
     to README.Rmd.
 
-12. Commit, push, rinse, and repeat as the project progresses. Follow
+11. Commit, push, rinse, and repeat as the project progresses. Follow
     [these
     instructions](https://happygitwithr.com/new-github-first.html#make-local-changes-save-commit-1).
 
@@ -110,15 +106,18 @@ of R packages).
     
       - How to make citations in Rmarkdown:
         <https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#bibliographies>
+      - The citation style file `apa-single-spaced.csl` came from the
+        [Zotero Style
+        Repository](https://www.zotero.org/styles?q=id%3Aapa-single-spaced&fields=psychology&format=author-date).
 
 3.  Render presentation by clicking the `Knit` button in the notebook
     editor window.
 
-4.  XXX how to insert slef-referential links to github & zenodo XXX
+4.  XXX how to insert self-referential links to github & zenodo XXX
 
 ## Clean up and publish
 
-1.  Remove any unused documents and figures.
+1.  Remove any documents not used in current presentation.
 
 2.  Publish to github (how???)
 

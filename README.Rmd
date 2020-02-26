@@ -88,10 +88,7 @@ while installing the required LaTeX infrastructure.
 (For a future project it may be worth trying to set up a [Docker](https://www.docker.com/) image
 with the fonts and LaTeX packages installed.)
 
-1. The citation style (`apa-single-spaced.csl`) came from the the 
-[Zotero Style Repository](https://www.zotero.org/styles?q=id%3Aapa-single-spaced&fields=psychology&format=author-date).
-
-1. Copy README.Rmd (this document) from a prior GitHub linked project
+1. Copy `README.Rmd` (this document) from a prior GitHub linked project
 and edit it to explain what this project is about and how it was set up.
 Keep this up to date as the project progresses.
 See [GitHub document](https://rmarkdown.rstudio.com/github_document_format.html)
@@ -115,6 +112,8 @@ Follow [these instructions](https://happygitwithr.com/new-github-first.html#make
 
 1. Write presentation, copying figures from prior documents as needed
     * How to make citations in Rmarkdown: https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#bibliographies
+    * The citation style file `apa-single-spaced.csl` came from the 
+    [Zotero Style Repository](https://www.zotero.org/styles?q=id%3Aapa-single-spaced&fields=psychology&format=author-date).
 
 1. Render presentation by clicking the `Knit` button in the notebook editor window.
 
@@ -122,7 +121,7 @@ Follow [these instructions](https://happygitwithr.com/new-github-first.html#make
 
 ## Clean up and publish
 
-1. Remove any unused documents and figures.
+1. Remove any documents not used in current presentation.
 
 2. Publish to github (how???)
 
