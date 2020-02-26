@@ -51,9 +51,8 @@ using these [instructions](https://happygitwithr.com/new-github-first.html#make-
 1. Create a local RStudio project by cloning the GitHub repo
 using these [instructions](https://happygitwithr.com/new-github-first.html#new-rstudio-project-via-git-clone).
 
-1. Create a `past_pres` and a `figs` subdirectory of the new project
-because I anticipate using a lot past presentations and copying pages out of them 
-to use as figures in the current presentation.
+1. Create a `figs` subdirectory of the new project to contain figures
+(which will be copied from past projects).
 
 1. Guard against leaking credentials to GitHub.
 This only needs to be done once per user/computer
@@ -78,6 +77,20 @@ but does no harm to be repeated for each new project.
     usethis::use_usethis()
     ```
 
+1. This presentation document requires the `binb` package to enable rendering the output as a PDF presentation.
+The document uses the `binb` metropolis template. 
+This requires a variety of LaTeX tools and fonts to be installed,
+in addition to the rmarkdown and knitr infrastructure.
+See [eddelbuettel/binb](https://github.com/eddelbuettel/binb) for `binb` installation advice.
+The first attempt to knit the presentation
+may result in the LaTeX package manager running for **ages**
+while installing the required LaTeX infrastructure.
+(For a future project it may be worth trying to set up a [Docker](https://www.docker.com/) image
+with the fonts and LaTeX packages installed.)
+
+1. The citation style (`apa-single-spaced.csl`) came from the the 
+[Zotero Style Repository](https://www.zotero.org/styles?q=id%3Aapa-single-spaced&fields=psychology&format=author-date).
+
 1. Copy README.Rmd (this document) from a prior GitHub linked project
 and edit it to explain what this project is about and how it was set up.
 Keep this up to date as the project progresses.
@@ -96,23 +109,21 @@ Follow [these instructions](https://happygitwithr.com/new-github-first.html#make
 ## Write presentation
 
 1. Copy in resources from previous projects to use as a starting point.  
-  * VSA2020_Gayler_abstract.pdf # submitted extended abstract of presentation
-  * scorecal_CSCC_2019 / scorecal_CSCC_2019.Rmd # use as template for current presentation
-  * scorecal_CSCC_2019 / by.png # CC-BY logo
-  * old presentations
+    * VSA2020_Gayler_abstract.pdf # submitted extended abstract of presentation
+    * VSA2020_Gayler_abstract.zip # source code of extended abstract
+    * Figures from old presentations
 
 1. Write presentation, copying figures from prior documents as needed
+    * How to make citations in Rmarkdown: https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#bibliographies
 
-1. Render presentation (how???)
+1. Render presentation by clicking the `Knit` button in the notebook editor window.
+
+1. XXX how to insert self-referential links to github & zenodo XXX
 
 ## Clean up and publish
 
-1. Remove any documents not used in current presentation.
+1. Remove any unused documents and figures.
 
 2. Publish to github (how???)
 
 3. Publish to Zenodo ???
-
-
-
-

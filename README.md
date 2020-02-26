@@ -44,9 +44,8 @@ of R packages).
     these
     [instructions](https://happygitwithr.com/new-github-first.html#new-rstudio-project-via-git-clone).
 
-4.  Create a `past_pres` and a `figs` subdirectory of the new project
-    because I anticipate using a lot past presentations and copying
-    pages out of them to use as figures in the current presentation.
+4.  Create a `figs` subdirectory of the new project to contain figures
+    (which will be copied from past projects).
 
 5.  Guard against leaking credentials to GitHub. This only needs to be
     done once per user/computer but does no harm to be repeated for each
@@ -64,46 +63,62 @@ of R packages).
     `usethis` (updates the project-specific `.Rprofile`).  
     `renv::install("usethis") usethis::use_usethis()`
 
-8.  Copy README.Rmd (this document) from a prior GitHub linked project
+8.  This presentation document requires the `binb` package to enable
+    rendering the output as a PDF presentation. The document uses the
+    `binb` metropolis template. This requires a variety of LaTeX tools
+    and fonts to be installed, in addition to the rmarkdown and knitr
+    infrastructure. See
+    [eddelbuettel/binb](https://github.com/eddelbuettel/binb) for `binb`
+    installation advice. The first attempt to knit the presentation may
+    result in the LaTeX package manager running for **ages** while
+    installing the required LaTeX infrastructure. (For a future project
+    it may be worth trying to set up a [Docker](https://www.docker.com/)
+    image with the fonts and LaTeX packages installed.)
+
+9.  The citation style (`apa-single-spaced.csl`) came from the the
+    [Zotero Style
+    Repository](https://www.zotero.org/styles?q=id%3Aapa-single-spaced&fields=psychology&format=author-date).
+
+10. Copy README.Rmd (this document) from a prior GitHub linked project
     and edit it to explain what this project is about and how it was set
     up. Keep this up to date as the project progresses. See [GitHub
     document](https://rmarkdown.rstudio.com/github_document_format.html)
     for instructions on the contents for this kind of README to be
     rendered on GitHub.
 
-9.  Set the license.  
+11. Set the license.  
     `usethis::use_ccby_license()`  
     Add the appropriate license badge from
     [lukas-h/license-badges.md](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
     to README.Rmd.
 
-10. Commit, push, rinse, and repeat as the project progresses. Follow
+12. Commit, push, rinse, and repeat as the project progresses. Follow
     [these
     instructions](https://happygitwithr.com/new-github-first.html#make-local-changes-save-commit-1).
 
 ## Write presentation
 
-1.  Copy in resources from previous projects to use as a starting
-    point.  
+1.  Copy in resources from previous projects to use as a starting point.
+    
+      - VSA2020\_Gayler\_abstract.pdf \# submitted extended abstract of
+        presentation
+      - VSA2020\_Gayler\_abstract.zip \# source code of extended
+        abstract
+      - Figures from old presentations
 
-<!-- end list -->
+2.  Write presentation, copying figures from prior documents as needed
+    
+      - How to make citations in Rmarkdown:
+        <https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#bibliographies>
 
-  - VSA2020\_Gayler\_abstract.pdf \# submitted extended abstract of
-    presentation
-  - scorecal\_CSCC\_2019 / scorecal\_CSCC\_2019.Rmd \# use as template
-    for current presentation
-  - scorecal\_CSCC\_2019 / by.png \# CC-BY logo
-  - old presentations
+3.  Render presentation by clicking the `Knit` button in the notebook
+    editor window.
 
-<!-- end list -->
-
-1.  Write presentation, copying figures from prior documents as needed
-
-2.  Render presentation (how???)
+4.  XXX how to insert slef-referential links to github & zenodo XXX
 
 ## Clean up and publish
 
-1.  Remove any documents not used in current presentation.
+1.  Remove any unused documents and figures.
 
 2.  Publish to github (how???)
 
