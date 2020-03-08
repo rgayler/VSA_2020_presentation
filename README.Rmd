@@ -51,6 +51,14 @@ using these [instructions](https://happygitwithr.com/new-github-first.html#make-
 1. Create a local RStudio project by cloning the GitHub repo
 using these [instructions](https://happygitwithr.com/new-github-first.html#new-rstudio-project-via-git-clone).
 
+1. Add file `.gitattributes` with the following contents
+  so that Rmarkdown files are recognised as `R` by GitHub.  
+    ```
+    # Get GitHub to reclassify `.Rmd` files as R
+    ```  
+    ```
+    *.Rmd linguist-language=R
+    ```
 1. Create a `figs` subdirectory of the new project to contain figures
 (which will be copied from past projects).
 

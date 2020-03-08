@@ -44,27 +44,32 @@ of R packages).
     these
     [instructions](https://happygitwithr.com/new-github-first.html#new-rstudio-project-via-git-clone).
 
-4.  Create a `figs` subdirectory of the new project to contain figures
+4.  Add file `.gitattributes` with the following contents so that
+    Rmarkdown files are recognised as `R` by GitHub.  
+    ``# Get GitHub to reclassify `.Rmd` files as R``  
+    `*.Rmd linguist-language=R`
+
+5.  Create a `figs` subdirectory of the new project to contain figures
     (which will be copied from past projects).
 
-5.  Guard against leaking credentials to GitHub. This only needs to be
+6.  Guard against leaking credentials to GitHub. This only needs to be
     done once per user/computer but does no harm to be repeated for each
     new project.  
     `usethis::git_vaccinate()`
 
-6.  Activate `renv` package tracking.  
+7.  Activate `renv` package tracking.  
     `renv::init()`  
     This starts the project with an empty library, so all the
     infrastructure will have to be installed as it is first used. You
     will use `renv::install()` a lot, in particular, you will have to
     install `usethis` into the project.
 
-7.  Install `usethis` to the project and mark the project as using
+8.  Install `usethis` to the project and mark the project as using
     `usethis` (updates the project-specific `.Rprofile`).  
     `renv::install("usethis")`  
     `usethis::use_usethis()`
 
-8.  This presentation document requires the `binb` package to enable
+9.  This presentation document requires the `binb` package to enable
     rendering the output as a PDF presentation. The document uses the
     `binb` metropolis template. This requires a variety of LaTeX tools
     and fonts to be installed, in addition to the rmarkdown and knitr
@@ -89,20 +94,20 @@ of R packages).
         [Docker](https://www.docker.com/) image with the fonts and LaTeX
         packages installed.
 
-9.  Copy `README.Rmd` (this document) from a prior GitHub linked project
+10. Copy `README.Rmd` (this document) from a prior GitHub linked project
     and edit it to explain what this project is about and how it was set
     up. Keep this up to date as the project progresses. See [GitHub
     document](https://rmarkdown.rstudio.com/github_document_format.html)
     for instructions on the contents for this kind of README to be
     rendered on GitHub.
 
-10. Set the license.  
+11. Set the license.  
     `usethis::use_ccby_license()`  
     Add the appropriate license badge from
     [lukas-h/license-badges.md](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
     to README.Rmd.
 
-11. Commit, push, rinse, and repeat as the project progresses. Follow
+12. Commit, push, rinse, and repeat as the project progresses. Follow
     [these
     instructions](https://happygitwithr.com/new-github-first.html#make-local-changes-save-commit-1).
 
