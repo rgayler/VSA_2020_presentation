@@ -74,6 +74,8 @@ but does no harm to be repeated for each new project.
 (updates the project-specific `.Rprofile`).  
     ```
     renv::install("usethis")  
+    ```  
+    ```
     usethis::use_usethis()
     ```
 
@@ -82,11 +84,18 @@ The document uses the `binb` metropolis template.
 This requires a variety of LaTeX tools and fonts to be installed,
 in addition to the rmarkdown and knitr infrastructure.
 See [eddelbuettel/binb](https://github.com/eddelbuettel/binb) for `binb` installation advice.
-The first attempt to knit the presentation
-may result in the LaTeX package manager running for **ages**
-while installing the required LaTeX infrastructure.
-(For a future project it may be worth trying to set up a [Docker](https://www.docker.com/) image
-with the fonts and LaTeX packages installed.)
+  * Make sure the Fira Sans and Fira Mono fonts are installed. 
+    (Instructions on how to [check what fonts are installed](https://www.cyberciti.biz/tips/quickly-list-all-available-fonts.html).
+    I found it convenient to download [Fira Sans](https://www.fontsquirrel.com/fonts/fira-sans) 
+    and [Fira Mono](https://www.fontsquirrel.com/fonts/fira-mono) from [Font Squirrel](https://www.fontsquirrel.com).
+    Instructions on [how to install fonts](https://itsfoss.com/install-fonts-ubuntu/) - 
+    for reasons I don't understand, using `font-manager` didn't work,
+    whereas copying the font files to `$/.fonts` did work.) 
+  * The first attempt to knit the presentation
+    may result in the LaTeX package manager running for **ages**
+    while installing the required LaTeX infrastructure.
+  * For a future project it may be worth trying to set up a [Docker](https://www.docker.com/) image
+    with the fonts and LaTeX packages installed.
 
 1. Copy `README.Rmd` (this document) from a prior GitHub linked project
 and edit it to explain what this project is about and how it was set up.

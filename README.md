@@ -61,7 +61,8 @@ of R packages).
 
 7.  Install `usethis` to the project and mark the project as using
     `usethis` (updates the project-specific `.Rprofile`).  
-    `renv::install("usethis") usethis::use_usethis()`
+    `renv::install("usethis")`  
+    `usethis::use_usethis()`
 
 8.  This presentation document requires the `binb` package to enable
     rendering the output as a PDF presentation. The document uses the
@@ -69,26 +70,43 @@ of R packages).
     and fonts to be installed, in addition to the rmarkdown and knitr
     infrastructure. See
     [eddelbuettel/binb](https://github.com/eddelbuettel/binb) for `binb`
-    installation advice. The first attempt to knit the presentation may
-    result in the LaTeX package manager running for **ages** while
-    installing the required LaTeX infrastructure. (For a future project
-    it may be worth trying to set up a [Docker](https://www.docker.com/)
-    image with the fonts and LaTeX packages installed.)
+    installation advice.
 
-9.  Copy `README.Rmd` (this document) from a prior GitHub linked project
+<!-- end list -->
+
+  - Make sure the Fira Sans and Fira Mono fonts are installed.
+    (Instructions on how to [check what fonts are
+    installed](https://www.cyberciti.biz/tips/quickly-list-all-available-fonts.html).
+    I found it convenient to download [Fira
+    Sans](https://www.fontsquirrel.com/fonts/fira-sans) and [Fira
+    Mono](https://www.fontsquirrel.com/fonts/fira-mono) from [Font
+    Squirrel](https://www.fontsquirrel.com). Instructions on [how to
+    install fonts](https://itsfoss.com/install-fonts-ubuntu/) - for
+    reasons I don’t understand, using `font-manager` didn’t work,
+    whereas copying the font files to `$/.fonts` did work.)
+  - The first attempt to knit the presentation may result in the LaTeX
+    package manager running for **ages** while installing the required
+    LaTeX infrastructure.
+  - For a future project it may be worth trying to set up a
+    [Docker](https://www.docker.com/) image with the fonts and LaTeX
+    packages installed.
+
+<!-- end list -->
+
+1.  Copy `README.Rmd` (this document) from a prior GitHub linked project
     and edit it to explain what this project is about and how it was set
     up. Keep this up to date as the project progresses. See [GitHub
     document](https://rmarkdown.rstudio.com/github_document_format.html)
     for instructions on the contents for this kind of README to be
     rendered on GitHub.
 
-10. Set the license.  
+2.  Set the license.  
     `usethis::use_ccby_license()`  
     Add the appropriate license badge from
     [lukas-h/license-badges.md](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
     to README.Rmd.
 
-11. Commit, push, rinse, and repeat as the project progresses. Follow
+3.  Commit, push, rinse, and repeat as the project progresses. Follow
     [these
     instructions](https://happygitwithr.com/new-github-first.html#make-local-changes-save-commit-1).
 

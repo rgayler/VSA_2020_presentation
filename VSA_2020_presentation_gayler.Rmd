@@ -26,29 +26,6 @@ csl: apa-single-spaced.csl
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache=FALSE)
 
-# set.seed(47) # for reproducibility
-
-# This notebook requires the binb package to enable rendering the output as a PDF presentation.
-# It uses the binb metropolis template. 
-# This requires a variety of LaTeX tools and fonts to be installed,
-# in addition to the rmarkdown and knitr infrastructure.
-# See http://github.com/eddelbuettel/binb for binb installation advice.
-
-# library(tidyverse) # data manipulation
-# library(grid) # for composing multiple plots
-# library(cowplot) # add marginal density to plots
-# library(patchwork) # arrange multiple plots
-# library(sn) # skew-normal distributions
-# library(binom) # for confidence intervals of proportions
-# library(mgcv) # for smoothed fits
-# library(fastDummies) # for dummy coding of individual scores for spike detection
-# library(glue) # for constructing model formulae in spike detection
-# library(glmnet) # for selection of scores as predictors of spikes 
-# library(glmnetUtils) # for selection of scores as predictors of spikes 
-# library(sessioninfo) # to get the software versions for reproducibility
-# library(here) # for safe specification of file paths
-# library(fs) # file handling utilities
-
 ```
 
 ## Analogy as structure mapping
