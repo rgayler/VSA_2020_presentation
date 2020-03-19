@@ -7,10 +7,9 @@ Ross Gayler
 
 <!-- badges: start -->
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3700836.svg)](https://doi.org/10.5281/zenodo.3700836)
 [![License: CC
 BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-<!-- [![DOI](https://zenodo.org/badge/205238383.svg)](https://zenodo.org/badge/latestdoi/205238383) -->
-<!-- [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rgayler/scorecal_CSCC_2019/master?urlpath=rstudio) -->
 <!-- badges: end -->
 
 Create the presentation, “VSA, Analogy, and Dynamic Similarity”, to be
