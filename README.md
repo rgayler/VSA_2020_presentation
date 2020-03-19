@@ -20,6 +20,9 @@ Architectures](https://sites.google.com/view/vsaworkshop2020/home) on
 [8th Annual Neuro-Inspired Computational Elements (NICE)
 Workshop](https://niceworkshop.org/nice-2020/).
 
+*The workshop was cancelled because of the COVID-19 pandemic, but I have
+made the presentation available anyway.*
+
 The primary purpose of this repository is to archive the source code for
 creating the presentation. The secondary purpose is to document the
 process of creating and running the project, in the hope that it will
