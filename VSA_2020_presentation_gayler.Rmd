@@ -122,21 +122,26 @@ Lots to do:
 
 ## Resources
 
-The presentation is archived on Zenodo at
+\tiny
+
+The video of this presentation given on 2020-05-18 is archived on Zenodo at  
+https://doi.org/10.5281/zenodo.3835154
+
+The slides of this presentation are archived on Zenodo at  
 https://doi.org/10.5281/zenodo.3700836
 
-The source code of this presentation is publicly accessible on GitHub at
+The source code of this presentation is publicly accessible on GitHub at  
 https://github.com/rgayler/VSA_2020_presentation
 
-The extended abstract of this presentation is publicly accessible on GitHub at
+The extended abstract of this presentation is publicly accessible on GitHub at  
 https://github.com/rgayler/VSA_2020_presentation/raw/master/VSA2020_Gayler_abstract.pdf
 
-\vspace{20pt}   
+\vspace{100pt}   
 
-![](figs/by.png){width=20%}  
-\small
+![](figs/by.png){width=10%}
 This presentation is licensed under a
 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
+
 \normalsize
 
 ## References
