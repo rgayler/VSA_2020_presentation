@@ -128,7 +128,7 @@ The video of this presentation given on 2020-05-18 is archived on Zenodo at
 https://doi.org/10.5281/zenodo.3835154
 
 The slides of this presentation are archived on Zenodo at  
-https://doi.org/10.5281/zenodo.3700836
+https://doi.org/10.5281/zenodo.3700835
 
 The source code of this presentation is publicly accessible on GitHub at  
 https://github.com/rgayler/VSA_2020_presentation
